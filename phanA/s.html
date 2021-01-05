@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// function sapxep(a,b){ 
+// const k = a.concat(b)
+// const d = a.filter((x) => b.indexOf(x) !== -1)
+// const j = k.filter((x) => d.indexOf(x) === -1)
+// console.log(j);
+// }
+// sapxep([1,2,'a'],[1,3,'b'])
+const a = [
+    {
+      name: "Arsenal",
+      points: 99,
+      GD: 45,
+    },
+    {
+      name: "Chelsea",
+      points: 75,
+      GD: 39,
+    },
+    {
+      name: "Manchester United",
+      points: 60,
+      GD: 29,
+    },{
+      name: "Liverpool",
+      points: 88,
+      GD: 39,
+    }
+  ]
+  let sapxep = doi => doi.sort((x, y) => {
+    if (x.points !== y.points)
+    {
+      return y.points - x.points
+    }
+    if(x.GD!==y.GD){
+        return y.GD -x.GD
+    }
+  })
+  console.log(sapxep(a))
+    </script>
+</body>
+</html>
